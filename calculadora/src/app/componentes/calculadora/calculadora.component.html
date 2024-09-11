@@ -1,0 +1,8 @@
+<app-display [valor]="resultado"></app-display>
+<div class="botoes">
+  <app-botao *ngFor="let label of ['7', '8', '9', '/', '4', '5', '6', '*', '1', '2', '3', '-', '0', '.', '=', '+']" 
+             [label]="label" 
+             (clicar)="atualizarDisplay(label)">
+  </app-botao>
+  <app-botao label="C" (clicar)="limpar()"></app-botao>
+</div>
